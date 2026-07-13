@@ -23,7 +23,7 @@ def add_film(user_id):
     """
     POST /watchlist/<user_id>/add
 
-    Body: { "film_id": <int> }
+    Body: { "film_id": "<uuid>" }
     """
     try:
         data = request.get_json()
